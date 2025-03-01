@@ -177,5 +177,5 @@ cython_debug/
 .venv/
 
 # Ignorar archivos de resultados y datos (si no quieres subirlos)
-data/
-results/
+
+.idea/
