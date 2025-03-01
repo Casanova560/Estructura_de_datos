@@ -1,9 +1,9 @@
-# hash_function.py
+def compute_hash(fecha, cuarto, local):
+    total = 0
+    for ch in str(fecha) + str(cuarto) + str(local):
+        total += ord(ch)
+    total *= (cuarto + 1)
+    return total % 750
 
-def calcular_posicion(fecha, cuarto, equipo_local):
-    """
-    Función de hash que calcula la posición en info.dat
-    Basado en fecha, cuarto y nombre del equipo local.
-    """
-    clave = hash((fecha, cuarto, equipo_local))
-    return clave % 750  # Aseguramos que esté dentro del rango de 750 registros
+
+
